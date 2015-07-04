@@ -1,0 +1,3 @@
+* TangoDjango
+Another tutorial from the [[http://www.tangowithdjango.com/book17/][Tango with django website]]
+
