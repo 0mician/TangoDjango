@@ -12,7 +12,9 @@ def populate():
 
     add_page(cat=python_cat,
         title="Official Python Tutorial",
-        url="http://docs.python.org/2/tutorial/")
+        url="http://docs.python.org/2/tutorial/",
+        views=10
+    )
 
     add_page(cat=python_cat,
         title="How to Think like a Computer Scientist",
@@ -30,11 +32,15 @@ def populate():
 
     add_page(cat=django_cat,
         title="Django Rocks",
-        url="http://www.djangorocks.com/")
+        url="http://www.djangorocks.com/",
+        views=128
+    )
 
     add_page(cat=django_cat,
         title="How to Tango with Django",
-        url="http://www.tangowithdjango.com/")
+        url="http://www.tangowithdjango.com/",
+        views=256
+    )
 
     frame_cat = add_cat("Other Frameworks", 32, 16)
 
@@ -44,7 +50,9 @@ def populate():
 
     add_page(cat=frame_cat,
         title="Flask",
-        url="http://flask.pocoo.org")
+        url="http://flask.pocoo.org",
+        views=64
+    )
 
     # Print out what we have added to the user.
     for c in Category.objects.all():
