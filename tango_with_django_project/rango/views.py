@@ -14,7 +14,7 @@ def index(request):
     return render(request, 'rango/index.html', context_dict)
 
 def about(request):
-    return render(request, 'rango/about.html')
+    return render(request, 'rango/about.html', {})
 
 def category(request, category_name_slug):
     context_dict = {}
@@ -128,7 +128,7 @@ def user_login(request):
 
 @login_required
 def restricted(request):
-    return HttpResponse("You are logged in, so you can see this.")
+    return render(request, 'rango/restricted.html', {})
 
 @login_required
 def user_logout(request):
